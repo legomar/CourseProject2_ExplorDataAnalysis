@@ -17,3 +17,4 @@ ggplot(coal_summary, aes(x=year, y=round(Emissions/1000,2), label=round(Emission
   geom_bar(stat="identity") + ylab(expression('PM'[2.5]*' Emissions in Kilotons')) + xlab("Year") +
   geom_label(aes(fill = year),colour = "white", fontface = "bold") +
   ggtitle("Baltimore Vehicle Emissions, 1999 to 2008.")
+dev.off()
